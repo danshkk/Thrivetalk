@@ -1,0 +1,47 @@
+@import '../../sass/abstracts/vars';
+@import '../../sass/abstracts/mixins';
+.contactUs {
+    background-color: $darkBlueColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentBox {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 880px) {
+        padding: 0 10px;
+    }
+    .title {
+        @include fontRegular($textColor, 16px);
+        align-self: flex-start;
+        margin-top: 100px;
+        @media screen and (max-width: 880px) {
+            margin: 15px 0 0 0;
+        }
+    }
+    .contentTitle {
+        @include fontBold($textColor, 64px);
+        margin-bottom: 75px;
+        @media screen and (max-width: 880px) {
+            margin-bottom: 15px;
+        }
+
+    }
+    .text {
+        @include fontRegular($textColor, 36px);
+        max-width: 580px;
+        line-height: 56px;
+    }
+    .subtitle {
+        align-self: flex-start;
+        @include fontBold ($lightBlueColor, 16px);
+        margin-bottom: 40px;
+        @media screen and (max-width: 880px) {
+            margin-bottom: 20px;
+        }
+    }
+}

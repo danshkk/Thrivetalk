@@ -1,0 +1,43 @@
+@import '../../sass/abstracts/vars';
+@import '../../sass/abstracts/mixins';
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentBox {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+        padding-left: 30px;
+    }
+    @media screen and (max-width: 821px) {
+        padding: 0 20px;
+    }
+    .title {
+        align-self: flex-start;
+        @include fontRegular($darkBlueColor, 16px);
+        margin: 100px 0 0 0;
+        align-self: flex-start;
+        @media screen and (max-width: 821px) {
+            margin: 50px 0 0 0;
+        }
+    }
+    .text {
+        @include fontBold ($darkBlueColor, 36px);
+        max-width: 690px;
+        line-height: 45px;
+    }
+    .logo {
+        color: $lightBlueColor;
+    }
+    .subtitle {
+        align-self: flex-start;
+        @include fontBold (#FAB63E, 16px);
+        margin: 0 0 45px 0;
+        align-self: flex-start;
+    }
+}

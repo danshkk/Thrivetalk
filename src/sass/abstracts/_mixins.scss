@@ -1,0 +1,23 @@
+@mixin fontRegular($color, $font-size) {
+    font-family: 'LarsseitRegular', sans-serif;
+    color: $color;
+    font-size: $font-size;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin fontMedium($color, $font-size) {
+    font-family: 'LarsseitMedium', sans-serif;
+    color: $color;
+    font-size: $font-size;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin fontBold($color, $font-size) {
+    font-family: 'LarsseitBold', sans-serif;
+    color: $color;
+    font-size: $font-size;
+    font-weight: 700;
+    font-style: normal;
+}

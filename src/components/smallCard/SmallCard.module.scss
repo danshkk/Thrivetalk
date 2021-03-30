@@ -1,0 +1,40 @@
+@import '../../sass/abstracts/vars';
+.smallCard {
+    min-height: 360px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @media screen and (max-width: 1024px) {
+        min-height: 250px;
+    }
+    @media screen and (max-width: 1024px) {
+        min-height: 191px;
+    }
+    &::before {
+        content: "";
+        height: 1px;
+        width: 70%;
+        background-color: #fff;
+        position: absolute;
+        top: 30%;
+    }
+}
+.title {
+    color: $textColor;
+    position: relative;
+    &::before {
+        content: '';
+        background-image: url(../../assets/image/EllipseSmall.png);
+        width: 9px;
+        height: 9px;
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: -25px;
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import '../../sass/abstracts/vars';
+@import '../../sass/abstracts/mixins';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 0 0;
+    position: relative;
+}
+.title {
+    @include fontRegular($darkBlueColor, 16px);
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    @media screen and (max-width: 1000px) {
+        top: 15%;
+    }
+}
+.text {
+    @include fontRegular($darkBlueColor, 24px);
+    max-width: 580px;
+    margin-bottom: 75px;
+}
+.subtitle {
+    @include fontRegular(rgba(34, 53, 111, 0.5), 16px);
+    margin-bottom: 25px;
+}

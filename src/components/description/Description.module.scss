@@ -1,0 +1,24 @@
+@import '../../sass/abstracts/vars';
+@import '../../sass/abstracts/mixins';
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contentBox {
+        @media screen and (max-width: 945px) {
+            padding: 10px;
+        }
+    }
+    .title {
+        @include fontRegular ($darkBlueColor, 26px);
+        align-self: flex-start;
+        margin-bottom: 40px;
+
+    }
+    .text {
+        @include fontRegular (rgba(34, 53, 111, 0.5), 16px);
+        max-width: 300px;
+        line-height: 27px;
+    }
+}
