@@ -1,3 +1,4 @@
+import BurgerMenu from '../../components/burgerMenu/BurgerMenu';
 import s from './StartPage.module.scss'
 
 function StartPage() {
@@ -5,6 +6,7 @@ function StartPage() {
     <section className={s.startPage} id='startPage'>
       <div className={s.topContent}>
         <span className={s.topLogo}>Thrivetalk</span>
+        <BurgerMenu/>
         <ul className={s.list}>
           <li className={s.item}><a className={s.link} href="">Home</a></li>
           <li className={s.item}><a className={s.link} href="">About</a></li>

@@ -4,6 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 755px) {
+        min-height: 100vh;
+        background-image: url(../../assets/image/statspage.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+     }
 }
 .contentBox {
     flex-grow: 1;
@@ -17,6 +24,13 @@
     @media screen and (max-width: 821px) {
         padding: 0 20px;
     }
+    @media screen and (max-width: 755px) {
+        flex-grow: 0;
+        border-radius: 30px;
+        background-color: white;
+        opacity: 90%;
+        margin: 0 15px 15px 15px;
+}
     .title {
         align-self: flex-start;
         @include fontRegular($darkBlueColor, 16px);
@@ -25,11 +39,18 @@
         @media screen and (max-width: 821px) {
             margin: 50px 0 0 0;
         }
+        @media screen and (max-width: 755px) {
+            margin: 20px 0 10px 0;
+        }
     }
     .text {
         @include fontBold ($darkBlueColor, 36px);
         max-width: 690px;
         line-height: 45px;
+        @media screen and (max-width: 755px) {
+            line-height: 40px;
+            font-size: 30px;
+        }
     }
     .logo {
         color: $lightBlueColor;
@@ -39,5 +60,8 @@
         @include fontBold (#FAB63E, 16px);
         margin: 0 0 45px 0;
         align-self: flex-start;
+        @media screen and (max-width: 755px) {
+            margin: 20px 0px 10px 0;
+        }
     }
 }

@@ -17,13 +17,23 @@
     @media screen and (max-width: 1000px) {
         top: 15%;
     }
+    @media screen and (max-width: 595px) {
+        top: 10%;
+    }
 }
 .text {
     @include fontRegular($darkBlueColor, 24px);
     max-width: 580px;
     margin-bottom: 75px;
+    @media screen and (max-width: 595px) {
+        padding: 0 15px;
+        margin-bottom: 55px;
+    }
 }
 .subtitle {
     @include fontRegular(rgba(34, 53, 111, 0.5), 16px);
     margin-bottom: 25px;
+    @media screen and (max-width: 595px) {
+        margin-bottom: 10px;
+    }
 }

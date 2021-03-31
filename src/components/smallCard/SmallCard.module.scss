@@ -12,6 +12,9 @@
     @media screen and (max-width: 1024px) {
         min-height: 191px;
     }
+    @media screen and (max-width: 755px) {
+        margin-bottom: 0px;
+    }
     &::before {
         content: "";
         height: 1px;
